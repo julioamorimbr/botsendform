@@ -1,3 +1,8 @@
+import pandas as pandas
+
+tabela = pd.read_excel("EXCEL AQUI")
+display(tabela)
+
 for i, nome in enumerate(tabela["Nome"]):
     email = tabela.loc[i, "Email"]
     assunto = tabela.loc[i, "Assunto"]
